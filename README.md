@@ -42,7 +42,7 @@ The project consists of three main components:
 ### Installing
 To clone the git repository:
 ```
-git clone https://github.com/canaveensetia/udacity-disaster-response-pipeline.git
+git clone https://github.com/romy651/disaster_response_pipeline_project.git
 ```
 <a name="execution"></a>
 ### Executing Program:
@@ -95,13 +95,13 @@ You can use **ML Pipeline Preparation Notebook** to re-train the model or tune i
 <a name="screenshots"></a>
 ## Screenshots
 
-1. This is an example of a message we can type to test the performance of the model
+1. Main page shows the Overview of Training Dataset & Distribution of Message Categories
 
-![Sample Input](screenshots/sample_input.png)
+![Sample Input](screenshots/home_page.png)
 
-2. After clicking **Classify Message**, we can see the categories which the message belongs to highlighted in green
+2. Enter message and click 'Classify Message' to see the categories which the message belongs to highlighted in green
 
-![Sample Output](screenshots/sample_output.png)
+![Sample Output](screenshots/query.png)
 
 3. The main page shows some graphs about training dataset, provided by Figure Eight
 
@@ -113,8 +113,9 @@ You can use **ML Pipeline Preparation Notebook** to re-train the model or tune i
 
 5. Sample run of train_classifier.py
 
-![Train Classifier without Category Level Precision Recall](screenshots/train_classifier.png)
+![Image](screenshots/train_classifier.png)
+![Image](screenshots/evaluation.png)
 
-6. Sample run of train_classifier.py with precision, recall etc. for each category
+6. Run run.py in app folder to see the web app in action
 
-![Train Classifier with Category Level Precision Recall](screenshots/train_classifier_category_precision_recall.png)
+![Exute run.py](screenshots/run.png)

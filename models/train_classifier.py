@@ -35,14 +35,10 @@ from scipy.stats import gmean
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import fbeta_score, make_scorer
-from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier, AdaBoostClassifier
+from sklearn.ensemble import AdaBoostClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.feature_extraction.text import TfidfTransformer, CountVectorizer
 from sklearn.multioutput import MultiOutputClassifier
-from sklearn.base import BaseEstimator,TransformerMixin
-
 
 def load_data(database_filepath):
     """
@@ -142,7 +138,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
         _y_pred = y_pred_test[:, i]
         _y_test = Y_test.values[:, i]
         print('Classification report for the category: ', cat)
-        print(classification_report(_y_test, _y_pred, target_names=['class 0', 'class 1']))
+        print(classification_report(_y_test, _y_pred))
 
 
 
